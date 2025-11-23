@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3f2860;
+    color: #40407a;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#wrapper {
+    background-color: #f5f5f5;
+    margin-left: auto;
+    margin-right: auto;    
+    min-width: 1200px;
+    max-width: 1480px;
+}
+
+header {
+    background-color: #80cbc4;
+    background-image: url(sunrise.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 250px;
+    }
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1 {
+    padding-top: 50px;
+    padding-left: 2em;
+    background-image: url(lighthouselogo.jpg);
+    background-repeat: no-repeat;
+    }
+
+nav {
+    display:flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    margin-bottom: 1em;
+    padding: 1em;
+  
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #3f2860;
+}
+
+nav a:visited {
+    color: #497777;
+}
+
+main {
+    display: block;
+    margin-left: 170px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+}
+
+table,
+td,
+th {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+tr:nth-of-type(even) {
+    background-color: #dbe8e9;
+}
+
+.studio {
+    font-style: italic;
+}
+
+#yogalounge {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+footer {
+    font-size: 0.6em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+}
