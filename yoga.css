@@ -40,7 +40,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     font-weight: bold;
-    padding: 0;
+    padding: 15px;
     text-align: center;
     gap: 40px;
 }
@@ -83,6 +83,7 @@ th {
     border-collapse: collapse;
 }
 
+tr,
 td {
     height: 30px;
 }
@@ -126,25 +127,6 @@ label {
 input[type="submit"] {
     margin-left: 199px;
     width: 110px;
-}
-
-@media (max-width: 599px) {
-    form div {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0;
-    }
-
-    label {
-        text-align: left;
-    }
-
-
-    input[type="submit"] {
-        margin-left: 0;
-        margin-top: -5px;
-        width: 400px;
-    }
 }
 
 .list {
@@ -207,4 +189,161 @@ footer {
     font-style: italic;
     text-align: center;
     margin-bottom: 35px;
+}
+
+
+
+@ media (min-width: 1023px) {
+
+    
+}
+
+@media (min-width: 600px) and (max-width: 1022px) {
+    nav {
+        gap: 35px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 5px;
+        padding-right: 5px;
+    }
+
+    header {
+        height: 205px;
+    }
+
+    h1 {
+        margin-left: 110px;
+        font-size: 29px;
+    }
+
+    / * h2 ne s'applique pas */
+
+    h2 {
+        font-size: 25px;
+    }
+
+    td {
+        padding-left: 5px;
+    }
+
+    form {
+        width: 590px;
+    }
+
+    input,
+    textarea {
+        width: 365px;
+    }
+
+    / * .conteneur ne s'applique pas */
+
+    .conteneur {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .heure {
+        width: 160px;
+    }
+
+    .cours {
+        width: 410px;
+    }
+
+    #yogalounge {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    / * footer ne s'applique pas */
+
+    footer {
+        margin-bottom: 0;
+    }
+}
+
+
+@media (max-width: 599px) {
+    nav {
+        display: grid;
+        grid-template-columns: 5.5fr 4.5fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        gap: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 100px;
+    }
+
+    nav a {
+        margin-bottom: 1em;
+        padding: 0;
+    }
+
+    header {
+        height: 190px;
+    }
+
+    h1 {
+        margin-left: 65px;
+        font-size: 30px;
+    }
+
+    h2,
+    p {
+        padding-left: 10px;
+    }
+
+    td {
+        padding-left: 5px;
+    }
+
+    form div {
+        display: flex;
+        flex-direction: column;
+        padding-left: 13px;
+        gap: 0;
+    }
+
+    label {
+        flex: 1;
+        text-align: left;
+    }
+
+    input,
+    textarea {
+        display: block;
+        width: 397px;
+    }
+
+    input[type="submit"] {
+        margin-left: 13px;
+        width: 397px;
+    }
+
+    .a {
+        text-align: right;
+        padding-right: 15px;
+    }
+
+    .main {
+        margin-right: 30px;
+    }
+
+    .conteneur {
+        margin-left: 30px;
+        margin-right: 25px;
+    }
+
+    .heure {
+        width: 90px;
+    }
+
+    .cours {
+        width: 210px;
+    }
+
+    #yogalounge {
+        display: none;
+    }
 }
