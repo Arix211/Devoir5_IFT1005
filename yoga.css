@@ -193,12 +193,15 @@ footer {
 
 
 
-@ media (min-width: 1023px) {
-
-    
-}
+@ media (min-width: 1023px) {}
 
 @media (min-width: 600px) and (max-width: 1022px) {
+
+    /* body ne s'applique pas */
+    body {
+        background-color: none;
+    }
+
     nav {
         gap: 35px;
         padding-top: 15px;
@@ -216,8 +219,7 @@ footer {
         font-size: 29px;
     }
 
-    / * h2 ne s'applique pas */
-
+    /* h2 ne s'applique pas */
     h2 {
         font-size: 25px;
     }
@@ -235,8 +237,7 @@ footer {
         width: 365px;
     }
 
-    / * .conteneur ne s'applique pas */
-
+    /* .conteneur ne s'applique pas */
     .conteneur {
         margin-left: 35px;
         margin-right: 35px;
@@ -255,15 +256,20 @@ footer {
         margin-right: 35px;
     }
 
-    / * footer ne s'applique pas */
-
+    /* footer ne s'applique pas */
     footer {
         margin-bottom: 0;
     }
 }
 
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
+
+    /* body ne s'applique pas */
+    body {
+        background-color: none;
+    }
+
     nav {
         display: grid;
         grid-template-columns: 5.5fr 4.5fr;
