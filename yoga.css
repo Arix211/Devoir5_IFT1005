@@ -107,7 +107,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 625px;
+    max-width: 700px;
 }
 
 form div {
@@ -120,7 +120,7 @@ form div {
 input,
 textarea {
     display: block;
-    width: 400px;
+    width: 463px;
 }
 
 label {
@@ -129,7 +129,7 @@ label {
 }
 
 input[type="submit"] {
-    margin-left: 199px;
+    margin-left: 211px;
     width: 110px;
 }
 
@@ -244,13 +244,18 @@ footer {
     }
 
     form {
-        width: 590px;
+        width: 575px;
     }
 
     input,
     textarea {
-        width: 365px;
+        width: 355px;
     }
+
+    input[type="submit"] {
+        margin-left: 194px;
+    }
+
 
     .conteneur {
         margin-left: 35px;
@@ -319,19 +324,17 @@ footer {
     }
 
     label {
-        flex: 1;
         text-align: left;
     }
 
     input,
     textarea {
-        display: block;
-        width: 397px;
+        width: 100%;
     }
 
     input[type="submit"] {
         margin-left: 13px;
-        width: 397px;
+        width: 97%;
     }
 
     .a {
